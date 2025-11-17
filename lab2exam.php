@@ -64,6 +64,11 @@ document.getElementById("success").innerHTML =
     btn.onclick = function () {
         li.remove();
     };
+ li.appendChild(btn);
+    document.getElementById("courseList").appendChild(li);
 
+    document.getElementById("courseName").value = "";
+}
+</script>
 
 
