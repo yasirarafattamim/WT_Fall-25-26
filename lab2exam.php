@@ -1,85 +1,24 @@
 <!DOCTYPE html>
-
-<html>
-
 <head>
-
-    <title>
-
-        JS basic
-
-    </title>
-
+    <title>Student Registration</title>
 </head>
-
 <body>
-
-   
-
-<h1 id="demo">Welcome to Js Class </h1>
-
-<p> Lets Start the Class Today</p>
-
+    <h2>Student Registration</h2>
+    <from>
+        Full Name:<br><br>
+        <input type="text"><br><br><br>
+        Email:<br>
+        <input type="email"><br><br>
+        password:<br>
+        <input type="password"><br><br>
+        Confirm Password: <br>
+        <input type="password"><br><br>
+    </form>
  
-
+    <div class="success"></div>
  
-
-<script>
-
-   var name="Robin Hood";
-
-   let number=120;
-
-   var num_2= 270.0;
-
-   const last_name="Khan";
-
+    <h2>Course Registration</h2>
+    Course Name:<br>
+    <input type="checkbox"> Data Structures<br>
  
-
-document.write("Hello World");
-
-console.log("Hello Console");
-
-alert("Hello Alert");
-
- 
-
-//var body=document.getElementById("demo");
-
-//body.innerHTML="GOOD Bye";
-
- 
-
-console.log("the dt of name: ",typeof name);
-
-console.log("the dt of num1: ",typeof number);
-
-console.log("the dt of num2: ",typeof num_2);
-
-console.log(typeof undefined);
-
-console.log("the dt of Lname: ",typeof last_name);
-
- 
-
-let sum = number+num_2;
-
-console.log("The sum is : ",sum);
-
- 
-
-</script>
-
- 
-
- 
-
- 
-
 </body>
-
- 
-
-</html>
-
-
