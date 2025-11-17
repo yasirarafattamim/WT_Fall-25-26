@@ -31,8 +31,7 @@
 if (!name || !email || !pass || !cpass){
     alert("all fields are required");
     return;
-
-}if (!email.includes("@")) {
+     if (!email.includes("@")) {
         alert("Invalid Email!");
         return;
     }
@@ -41,7 +40,6 @@ if (!name || !email || !pass || !cpass){
         alert("Passwords do not match!");
         return;
     }
-
 document.getElementById("success").innerHTML = 
         `<div style="background:#ccffcc; padding:10px; margin-top:10px;">
             <b>Registration Successful!</b><br>
@@ -49,20 +47,5 @@ document.getElementById("success").innerHTML =
             Email: ${email}
         </div>`;
 }
-unction addCourse() {
-    let course = document.getElementById("courseName").value;
-
-    if (!course) {
-        alert("Please enter a course name!");
-        return;
-    }
-let btn = document.createElement("button");
-    btn.textContent = "Delete";
-    btn.style.marginLeft = "10px";
-
-    btn.onclick = function () {
-        li.remove();
-    };
 
 
-    }
