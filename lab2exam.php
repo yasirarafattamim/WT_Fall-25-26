@@ -22,3 +22,47 @@
     <input type="checkbox"> Data Structures<br>
  
 </body>
+<script>
+    funcation register(){
+        let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let pass = document.getElementById("pass").value;
+    let cpass = document.getElementById("cpass").value;
+if (!name || !email || !pass || !cpass){
+    alert("all fields are required");
+    return;
+
+}if (!email.includes("@")) {
+        alert("Invalid Email!");
+        return;
+    }
+
+    if (pass !== cpass) {
+        alert("Passwords do not match!");
+        return;
+    }
+
+document.getElementById("success").innerHTML = 
+        `<div style="background:#ccffcc; padding:10px; margin-top:10px;">
+            <b>Registration Successful!</b><br>
+            Name: ${name} <br>
+            Email: ${email}
+        </div>`;
+}
+unction addCourse() {
+    let course = document.getElementById("courseName").value;
+
+    if (!course) {
+        alert("Please enter a course name!");
+        return;
+    }
+let btn = document.createElement("button");
+    btn.textContent = "Delete";
+    btn.style.marginLeft = "10px";
+
+    btn.onclick = function () {
+        li.remove();
+    };
+
+
+    }
