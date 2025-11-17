@@ -46,6 +46,24 @@ document.getElementById("success").innerHTML =
             Name: ${name} <br>
             Email: ${email}
         </div>`;
-}
+}function addCourse() {
+    let course = document.getElementById("courseName").value;
+
+    if (!course) {
+        alert("Please enter a course name!");
+        return;
+    }
+
+    let li = document.createElement("li");
+    li.textContent = course;
+
+    let btn = document.createElement("button");
+    btn.textContent = "Delete";
+    btn.style.marginLeft = "10px";
+
+    btn.onclick = function () {
+        li.remove();
+    };
+
 
 
