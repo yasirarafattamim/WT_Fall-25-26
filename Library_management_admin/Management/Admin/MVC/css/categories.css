@@ -1,0 +1,17 @@
+/* Management/Admin/MVC/css/categories.css */
+
+.form-inline {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-inline input[type="text"] {
+    margin-bottom: 0;
+    width: auto;
+    flex-grow: 1;
+}
+
+.form-inline button {
+    white-space: nowrap;
+}
