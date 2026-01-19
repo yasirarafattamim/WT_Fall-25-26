@@ -7,7 +7,9 @@ function isLoggedIn() {
         return true;
     }
 
+
     // Check for Remember Me Cookie
+
     if (isset($_COOKIE['admin_remember'])) {
         require_once __DIR__ . '/../db/db.php';
         global $conn;
@@ -15,7 +17,8 @@ function isLoggedIn() {
         $cookie_val = base64_decode($_COOKIE['admin_remember']);
         $parts = explode(':', $cookie_val);
         
-        if (count($parts) === 2) {
+        if
+         (count($parts) === 2) {
             $username = $parts[0];
             $signature = $parts[1];
             $secret_key = "SuperSecretKey_ChangeThisInProduction";
