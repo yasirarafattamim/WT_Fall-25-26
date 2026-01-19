@@ -19,11 +19,14 @@
     /* Ensure it behaves like a block for layout */
 }
 
+
 .card-link:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     border-color: var(--primary-color);
+
 }
+
 
 .card-link h3 {
     margin: 0;
