@@ -11,6 +11,7 @@ if (isset($_COOKIE['admin_remember'])) {
     setcookie('admin_remember', '', time() - 3600, '/');
 }
 
+
 header("Location: auth_login.php");
 exit();
 ?>
