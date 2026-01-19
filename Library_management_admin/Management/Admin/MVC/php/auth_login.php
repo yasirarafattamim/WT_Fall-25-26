@@ -5,6 +5,7 @@ require_once __DIR__ . '/../db/db.php';
 
 requireGuest();
 
+
 $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -18,14 +19,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $result = mysqli_query($conn, $sql);
         $admin = mysqli_fetch_assoc($result);
 
-        if ($admin && password_verify($password, $admin['password'])) {
+        if 
+        ($admin && password_verify($password, $admin['password'])) {
             // Login Success
             session_regenerate_id(true);
             $_SESSION['admin_id'] = $admin['id'];
             $_SESSION['admin_username'] = $admin['username'];
             
             // Handle Remember Me
-            if (isset($_POST['remember'])) {
+            if 
+            (isset($_POST['remember'])) {
                 // Simple secure token strategy: username + hashed signature
                 // Ideally use a database token, but falling back to stateless signature for now as per plan
                 $secret_key = "SuperSecretKey_ChangeThisInProduction"; 
