@@ -9,6 +9,7 @@ $message = '';
 $error = '';
 
 // Handle Actions
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['action'])) {
         if ($_POST['action'] === 'add') {

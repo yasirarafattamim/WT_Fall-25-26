@@ -13,5 +13,6 @@ if (isset($_COOKIE['admin_remember'])) {
 
 
 header("Location: auth_login.php");
+
 exit();
 ?>
