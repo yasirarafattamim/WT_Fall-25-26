@@ -18,7 +18,8 @@ function isLoggedIn() {
         $parts = explode(':', $cookie_val);
         
         if
-         (count($parts) === 2) {
+         (count($parts) === 2)
+          {
             $username = $parts[0];
             $signature = $parts[1];
             $secret_key = "SuperSecretKey_ChangeThisInProduction";
