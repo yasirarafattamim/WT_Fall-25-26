@@ -3,6 +3,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     const noticeForm = document.querySelector('form[action="notice_controller.php"]');
 
+
+
+
+    
     if (noticeForm) {
         noticeForm.addEventListener('submit', function (event) {
             const title = noticeForm.querySelector('input[name="title"]');
@@ -14,6 +18,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.preventDefault();
                 return;
             }
+
+
+
+
+
+
+
+
+
 
             if (!content.value.trim()) {
                 alert('Please enter the content of the notice.');

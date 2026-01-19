@@ -13,12 +13,19 @@
         
         <h1>Manage Categories</h1>
 
+
         <?php if ($message): ?>
             <div class="alert alert-success"><?php echo htmlspecialchars($message); ?></div>
         <?php endif; ?>
         <?php if ($error): ?>
+
             <div class="alert alert-danger"><?php echo htmlspecialchars($error); ?></div>
         <?php endif; ?>
+
+
+
+
+
 
         <!-- Add Category Form -->
         <div class="card">
