@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.querySelector('form');
     
+    
     if (loginForm) {
         loginForm.addEventListener('submit', function(event) {
             let isValid = true;
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // For now, simple alerts or checking value presence as required attribute handles basic empty check,
             // but we add explicit JS check as requested.
             
+
             if (!usernameInput.value.trim()) {
                 alert('Please enter your username.');
                 usernameInput.focus();
@@ -20,7 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 event.preventDefault();
                 return;
             }
+
+
             
+
             if (!passwordInput.value.trim()) {
                 alert('Please enter your password.');
                 passwordInput.focus();
