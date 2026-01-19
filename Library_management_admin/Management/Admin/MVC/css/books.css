@@ -19,6 +19,7 @@
     padding: 5px;
 }
 
+
 /* Ensure select looks consistent if not covered by admin.css specific selectors */
 select.form-input {
     height: 35px;
