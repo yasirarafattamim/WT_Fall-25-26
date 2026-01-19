@@ -68,5 +68,5 @@
         </table>
     </div>
     <script src="../js/category_validation.js"></script>
-</body>
+ </body>
 </html>

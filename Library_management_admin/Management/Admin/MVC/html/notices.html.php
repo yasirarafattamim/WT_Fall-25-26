@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="../css/admin.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../css/notices.css?v=<?php echo time(); ?>">
 </head>
+
 <body>
+
     <div class="container">
         <a href="dashboard_controller.php" class="back-link">&larr; Back to Dashboard</a>
         
