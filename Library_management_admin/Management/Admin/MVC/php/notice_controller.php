@@ -39,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit();
 }
 
+
 // Check for Session Messages
 if (isset($_SESSION['message'])) {
     $message = $_SESSION['message'];
@@ -49,7 +50,9 @@ if (isset($_SESSION['error'])) {
     unset($_SESSION['error']);
 }
 
+
 // Fetch Notices
+
 $sql = "SELECT * FROM notices ORDER BY created_at DESC";
 $result = mysqli_query($conn, $sql);
 $notices = mysqli_fetch_all($result, MYSQLI_ASSOC);

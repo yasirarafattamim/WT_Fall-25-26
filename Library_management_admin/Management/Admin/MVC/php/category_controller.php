@@ -22,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     } else {
                         $_SESSION['error'] = "Failed to add category. Name might be duplicate.";
                     }
+                    
                 } catch (Exception $e) {
                     $_SESSION['error'] = "Error: " . $e->getMessage();
                 }
