@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const categoryForm = document.querySelector('form[action="category_controller.php"]');
 
     if (categoryForm) {
+        
         categoryForm.addEventListener('submit', function (event) {
             const nameInput = categoryForm.querySelector('input[name="name"]');
 
