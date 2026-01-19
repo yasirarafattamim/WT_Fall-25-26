@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Select the form checking for specific inputs or action
     const bookForm = document.querySelector('form[action="book_controller.php"] input[value="add"]').closest('form');
 
+    
     if (bookForm) {
         bookForm.addEventListener('submit', function (event) {
             let isValid = true;
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.preventDefault();
                 return;
             }
+
 
             if (!author.value.trim()) {
                 alert('Please enter an author name.');
