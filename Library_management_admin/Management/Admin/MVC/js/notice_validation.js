@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    
+
     if (noticeForm) {
         noticeForm.addEventListener('submit', function (event) {
             const title = noticeForm.querySelector('input[name="title"]');
@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('Please enter a title for the notice.');
                 title.focus();
                 event.preventDefault();
+                
                 return;
             }
 
